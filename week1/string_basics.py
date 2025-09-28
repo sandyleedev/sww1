@@ -44,3 +44,45 @@ print('The value of num1 is {} and the value of num2 is {}'.format(num1, num2))
 print('{}, {}, {}'.format("a", "b", "c"))
 print('{2}, {0}, {1}'.format("a", "b", "c"))
 print('{a} {b} {c}'.format(a = 1, b = 2, c = 3))    # replacement fields
+
+mess = "Hello World"
+print(mess)
+print(mess[0])
+print(mess[0:5])
+print(mess[:5])
+print(mess[6:])
+print(mess.upper())
+print(mess.lower())
+
+print(mess.count('Hello'))
+print(mess.count('l'))
+
+print(mess.find('World'))
+print(mess.find('Yayy'))
+print(mess.find('l'))
+
+# not replacing inplace. not affecting the original message
+mess2 = mess.replace('World', 'Universe')
+print(mess2)
+
+# or we can do this
+mess = mess.replace('World', 'Universe')
+print(mess)
+
+# add words. concatenating
+greeting = 'Hello'
+name = 'Michael'
+
+print(f'Hello {name}')
+print('Hello %s' %name)
+print('Hello {}'.format(name))
+
+print('{}, {}!'.format(greeting, name))
+print('{1}, {0}!'.format(greeting, name))
+
+# to see all the available methods
+print(dir(name))
+print(name.endswith('l'))
+
+# print(help(str))
+print(help(str.lower))
