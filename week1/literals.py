@@ -3,9 +3,9 @@ def string_literals():
     a_sent = 'let us learn Python'
     another_sent = "let us learn Python"
     and_another = '''let us
-                        learn
+                        learn \n
                             Python'''
-    using_lets = "let\'s learn Python"
+    using_lets = "let\'s learn Python"      # \ escape sequence character
     print(a_sent)
     print(another_sent)
     print(and_another)
@@ -15,6 +15,7 @@ def string_literals():
 def char_literals():
     print("The character literals are:")
     a_char = 'j'
+    print(f"type of a_char is {type(a_char)}")
     another_char = "k"
     yet_another = 'P'
     print("print them like this", a_char, "and another", another_char, "the last one is", yet_another)
